@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.jordan_carr.kotlinforandroiddevelopers", appContext.getPackageName());
+        assertEquals("com.jordan_carr.KWeather", appContext.getPackageName());
     }
 }
