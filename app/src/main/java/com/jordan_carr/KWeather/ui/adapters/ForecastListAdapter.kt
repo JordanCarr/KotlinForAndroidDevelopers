@@ -1,9 +1,9 @@
-package com.jordan_carr.kotlinforandroiddevelopers.ui.adapters
+package com.jordan_carr.KWeather.ui.adapters
 
 import android.support.v7.widget.RecyclerView
 import android.view.ViewGroup
 import android.widget.TextView
-import com.jordan_carr.kotlinforandroiddevelopers.domain.model.ForecastList
+import com.jordan_carr.KWeather.domain.model.ForecastList
 
 /**
  * Created by Jordan Carr on 2017-06-04.

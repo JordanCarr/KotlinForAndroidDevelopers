@@ -1,8 +1,8 @@
-package com.jordan_carr.kotlinforandroiddevelopers.domain.commands
+package com.jordan_carr.KWeather.domain.commands
 
-import com.jordan_carr.kotlinforandroiddevelopers.data.ForecastRequest
-import com.jordan_carr.kotlinforandroiddevelopers.domain.mappers.ForecastDataMapper
-import com.jordan_carr.kotlinforandroiddevelopers.domain.model.ForecastList
+import com.jordan_carr.KWeather.data.ForecastRequest
+import com.jordan_carr.KWeather.domain.mappers.ForecastDataMapper
+import com.jordan_carr.KWeather.domain.model.ForecastList
 
 /**
  * Created by Jordan Carr on 2017-06-05.

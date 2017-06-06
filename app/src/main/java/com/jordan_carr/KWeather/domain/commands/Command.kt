@@ -1,4 +1,4 @@
-package com.jordan_carr.kotlinforandroiddevelopers.domain.commands
+package com.jordan_carr.KWeather.domain.commands
 
 /**
  * Created by Jordan Carr on 2017-06-05.

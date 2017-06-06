@@ -1,4 +1,4 @@
-package com.jordan_carr.kotlinforandroiddevelopers.data
+package com.jordan_carr.KWeather.data
 
 import com.google.gson.Gson
 import java.net.URL

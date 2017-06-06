@@ -1,12 +1,12 @@
-package com.jordan_carr.kotlinforandroiddevelopers.domain.mappers
+package com.jordan_carr.KWeather.domain.mappers
 
-import com.jordan_carr.kotlinforandroiddevelopers.data.Forecast
-import com.jordan_carr.kotlinforandroiddevelopers.data.ForecastResult
-import com.jordan_carr.kotlinforandroiddevelopers.domain.model.ForecastList
+import com.jordan_carr.KWeather.data.Forecast
+import com.jordan_carr.KWeather.data.ForecastResult
+import com.jordan_carr.KWeather.domain.model.ForecastList
 import java.text.DateFormat
 import java.util.*
 import java.util.concurrent.TimeUnit
-import com.jordan_carr.kotlinforandroiddevelopers.domain.model.Forecast as ModelForecast
+import com.jordan_carr.KWeather.domain.model.Forecast as ModelForecast
 
 /**
  * Created by Jordan Carr on 2017-06-05.

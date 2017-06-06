@@ -1,4 +1,4 @@
-package com.jordan_carr.kotlinforandroiddevelopers.data
+package com.jordan_carr.KWeather.data
 
 /**
  * Created by Jordan Carr on 2017-06-04.

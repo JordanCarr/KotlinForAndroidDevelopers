@@ -1,12 +1,12 @@
-package com.jordan_carr.kotlinforandroiddevelopers.ui.activities
+package com.jordan_carr.KWeather.ui.activities
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import com.jordan_carr.kotlinforandroiddevelopers.R
-import com.jordan_carr.kotlinforandroiddevelopers.domain.commands.RequestForecastCommand
-import com.jordan_carr.kotlinforandroiddevelopers.ui.adapters.ForecastListAdapter
+import com.jordan_carr.KWeather.R
+import com.jordan_carr.KWeather.domain.commands.RequestForecastCommand
+import com.jordan_carr.KWeather.ui.adapters.ForecastListAdapter
 import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.find
 import org.jetbrains.anko.uiThread
