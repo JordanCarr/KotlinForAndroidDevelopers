@@ -44,8 +44,8 @@ class ForecastListAdapter(val weekForecast: ForecastList, val itemClick: (Foreca
                 Picasso.with(itemView.ctx).load(iconUrl).into(iconView)
                 dateView.text = date
                 descriptionView.text = description
-                maxTemperatureView.text = "$highº"
-                minTemperatureView.text = "$lowº"
+                maxTemperatureView.text = "$high"
+                minTemperatureView.text = "$low"
                 itemView.setOnClickListener { itemClick(this) }
             }
         }
