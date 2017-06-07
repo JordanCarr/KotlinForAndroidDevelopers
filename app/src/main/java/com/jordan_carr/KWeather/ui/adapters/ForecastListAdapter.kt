@@ -17,8 +17,8 @@ import org.jetbrains.anko.find
  * Created by Jordan Carr on 2017-06-04.
  */
 
-class ForecastListAdapter(
-        val weekForecast: ForecastList, val itemClick: ForecastListAdapter.OnItemClickListener) : RecyclerView.Adapter<ForecastListAdapter.ViewHolder>() {
+class ForecastListAdapter(val weekForecast: ForecastList, val itemClick: (Forecast) -> Unit) :
+        RecyclerView.Adapter<ForecastListAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.ctx).inflate(R.layout.item_forecast, parent, false)
@@ -26,14 +26,13 @@ class ForecastListAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        with(weekForecast[position]) {
-            holder.bindForecast(weekForecast[position])
-        }
+        holder.bindForecast(weekForecast[position])
     }
 
-    override fun getItemCount(): Int = weekForecast.size()
+    override fun getItemCount() = weekForecast.size
 
-    class ViewHolder(view: View, val itemClick: OnItemClickListener) : RecyclerView.ViewHolder(view) {
+    class ViewHolder(view: View, val itemClick: (Forecast) -> Unit) : RecyclerView.ViewHolder(view) {
+
         private val iconView = view.find<ImageView>(R.id.icon)
         private val dateView = view.find<TextView>(R.id.date)
         private val descriptionView = view.find<TextView>(R.id.description)
@@ -45,16 +44,10 @@ class ForecastListAdapter(
                 Picasso.with(itemView.ctx).load(iconUrl).into(iconView)
                 dateView.text = date
                 descriptionView.text = description
-                maxTemperatureView.text = "$high"
-                minTemperatureView.text = "$low"
-                itemView.setOnClickListener {
-                    itemClick(this)
-                }
+                maxTemperatureView.text = "$highº"
+                minTemperatureView.text = "$lowº"
+                itemView.setOnClickListener { itemClick(this) }
             }
         }
-    }
-
-    interface OnItemClickListener {
-        operator fun invoke(forecast: Forecast)
     }
 }
